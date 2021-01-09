@@ -19,3 +19,24 @@ while i < 15:
     i += 1
 
 print(new_list)
+
+
+# пример преподавателя
+
+fib_list = [1, 1]
+
+while len(fib_list) < 15:
+    fib_list.append(fib_list[-1] + fib_list[-2])
+
+
+print(fib_list)
+
+# решение с for
+
+list_fib = [1, 1]
+
+for i in range(3, 16):
+    list_fib.append(list_fib[-1] + list_fib[-2])
+
+
+print(list_fib)
