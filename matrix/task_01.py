@@ -27,3 +27,13 @@ for i in range(n):
     my_matrix.append(temp_list)
 for i in my_matrix:
     print(i)
+    
+# a. найти максимальный элемент матрицы;
+
+maximum = 0
+for i in range(n):
+    for j in range(m):
+        if my_matrix[i][j] > maximum:
+            maximum = my_matrix[i][j]
+
+print(f'максимальный элемент матрицы = {maximum}')
