@@ -57,3 +57,17 @@ for i in range(n):
 
 print(f'сумма всех элементов матрицы = {sum_my_matrix}')
 
+# d. найти индекс ряда с максимальной суммой элементов;
+
+sum_row_max = 0
+ind_row_max = 0
+for i in range(n):
+    sum_row_current = 0
+    for j in range(m):
+        sum_row_current += my_matrix[i][j]
+        if sum_row_current > sum_row_max:
+            sum_row_max = sum_row_current
+            ind_row_max = i
+
+print(f'индекс ряда с максимальной суммой элементов = {ind_row_max}')
+
