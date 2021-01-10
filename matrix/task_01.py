@@ -85,4 +85,20 @@ for j in range(m):
             ind_colum_max = j
 print(f'индекс колонки с максимальной суммой элементов = {ind_colum_max}')
 
+# f. найти индекс ряда с минимальной суммой элементов
+
+sum_row_min = sum_row_max
+ind_row_min = 0
+
+for i in range(n):
+    sum_row_tmin = 0
+    for j in range(m):
+        sum_row_tmin = sum_row_tmin + my_matrix[i][j]
+    if sum_row_tmin < sum_row_min:
+        sum_row_min = sum_row_tmin
+        ind_row_min = i
+
+print(f'индекс ряда с минимальной суммой элементов = {ind_row_min}')
+
+
 
