@@ -100,5 +100,23 @@ for i in range(n):
 
 print(f'индекс ряда с минимальной суммой элементов = {ind_row_min}')
 
+# g. найти индекс колонки с минимальной суммой элементов
+
+sum_colum_min = sum_colum_max
+ind_colum_min = 0
+
+for j in range(m):
+    sum_colum_tecc = 0
+    for i in range(n):
+        sum_colum_tecc += my_matrix[i][j]
+        if sum_colum_tecc < sum_colum_min:
+            sum_colum_min = sum_colum_tecc
+            ind_colum_min = j
+    # print(f'сумма  столбца {sum_colum_tecc} {j}')
+
+print(f'индекс колонки с минимальной суммой элементов = {ind_colum_min }')
+
+
+
 
 
