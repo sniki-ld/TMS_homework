@@ -71,3 +71,18 @@ for i in range(n):
 
 print(f'индекс ряда с максимальной суммой элементов = {ind_row_max}')
 
+# e. найти индекс колонки с максимальной суммой элементов;
+
+sum_colum_max = 0
+ind_colum_max = 0
+
+for j in range(m):
+    sum_colum_tec = 0
+    for i in range(n):
+        sum_colum_tec = sum_colum_tec + my_matrix[i][j]
+        if sum_colum_tec > sum_colum_max:
+            sum_colum_max = sum_colum_tec
+            ind_colum_max = j
+print(f'индекс колонки с максимальной суммой элементов = {ind_colum_max}')
+
+
