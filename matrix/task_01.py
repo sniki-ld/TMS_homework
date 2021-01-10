@@ -125,6 +125,14 @@ for i in range(n):
 for i in my_matrix:
     print(i)
 
+# h. обнулить все элементы выше главной диагонали
+
+for i in range(n):
+    for j in range(m):
+        if i < j:
+            my_matrix[i][j] = 0
+for i in my_matrix:
+    print(i)
 
 
 
