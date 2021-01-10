@@ -37,3 +37,13 @@ for i in range(n):
             maximum = my_matrix[i][j]
 
 print(f'максимальный элемент матрицы = {maximum}')
+
+# b. найти минимальный минимальный матрицы;
+
+minimum = a
+for i in range(n):
+    for j in range(m):
+        if my_matrix[i][j] == minimum:
+            minimum = my_matrix[i][j]
+
+print(f'минимальный элемент матрицы = {minimum}')
