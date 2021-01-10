@@ -47,3 +47,13 @@ for i in range(n):
             minimum = my_matrix[i][j]
 
 print(f'минимальный элемент матрицы = {minimum}')
+
+# c. найти сумму всех элементов матрицы;
+
+sum_my_matrix = 0
+for i in range(n):
+    for j in range(m):
+        sum_my_matrix += my_matrix[i][j]
+
+print(f'сумма всех элементов матрицы = {sum_my_matrix}')
+
