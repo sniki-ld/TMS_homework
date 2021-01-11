@@ -62,3 +62,22 @@ for i in range(n):
 
 for i in new_matrix_diff:
     print(i)
+
+#  c.создать новую матрицу равную matrix_a умноженной на число g.
+#  g вводится с клавиатуры.
+
+print('Матрица matrix_a умноженная на число g:')
+
+g = int(input())
+
+matrix_g = []
+for i in range(n):
+    row = []
+    for j in range(m):
+        row.append(my_matrix_a[i][j] * g)
+    matrix_g.append(row)
+
+for i in matrix_g:
+    print(i)
+
+
