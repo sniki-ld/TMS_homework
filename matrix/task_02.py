@@ -47,3 +47,18 @@ for i in range(n):
 
 for i in new_matrix_sum:
     print(i)
+    
+# b.создать матрицу равную разности matrix_a и matrix_b;
+
+print('Матрица разности:')
+
+new_matrix_diff = []
+
+for i in range(n):
+    list_elem = []
+    for j in range(m):
+        list_elem.append(my_matrix_a[i][j] - my_matrix_b[i][j])
+    new_matrix_diff.append(list_elem)
+
+for i in new_matrix_diff:
+    print(i)
