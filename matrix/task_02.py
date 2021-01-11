@@ -33,3 +33,17 @@ for i in range(n):
 for i in my_matrix_b:
     print(i)
 
+# a.создать матрицу равную сумме matrix_a и matrix_b;
+
+print('Матрица суммы:')
+
+new_matrix_sum = []
+
+for i in range(n):
+    list_item = []
+    for j in range(m):
+        list_item.append(my_matrix_a[i][j] + my_matrix_b[i][j])
+    new_matrix_sum.append(list_item)
+
+for i in new_matrix_sum:
+    print(i)
