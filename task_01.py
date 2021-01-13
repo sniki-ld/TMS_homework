@@ -57,3 +57,12 @@ def oz_grams(number):
     number *= 28.3495
     return round(number, 2)
 
+
+# 1.8.Граммы в унции
+
+
+def grams_oz(number):
+    number *= 0.035274
+    return round(number, 2)
+
+
