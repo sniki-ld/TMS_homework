@@ -50,3 +50,10 @@ def kg_lb(number):
     return round(number, 2)
 
 
+# 1.7.Унции в граммы
+
+
+def oz_grams(number):
+    number *= 28.3495
+    return round(number, 2)
+
