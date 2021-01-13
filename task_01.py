@@ -41,3 +41,12 @@ def lb_kg(number):
     number /= 2.20462
     return round(number, 2)
 
+
+# 1.6.Килограммы в фунты
+
+
+def kg_lb(number):
+    number *= 2.20462
+    return round(number, 2)
+
+
