@@ -33,3 +33,11 @@ def kilometers_miles(number):
     number /= 1.60934
     return round(number, 2)
 
+
+# 1.5.Фунты в килограммы
+
+
+def lb_kg(number):
+    number /= 2.20462
+    return round(number, 2)
+
