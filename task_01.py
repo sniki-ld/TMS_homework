@@ -8,4 +8,12 @@
 def inches_centimeters(number):
     number *= 2.54
     return number
+    
+    
+# 1.2.Сантиметры в дюймы
+
+
+def centimeters_inches(number):
+    number /= 2.54
+    return round(number, 2)
 
