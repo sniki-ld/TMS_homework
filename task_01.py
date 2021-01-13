@@ -73,3 +73,10 @@ def gallons_liters(number):
     number *= 3.78541
     return round(number, 2)
 
+
+# 1.10.Литры в галлоны
+
+
+def liters_gallons(number):
+    number /= 3.78541
+    return round(number, 2)
