@@ -108,3 +108,46 @@ def liters_pints(number):
 # Примечание: программа выполняется только в том случае,
 # если модуль работает в основном потоке.
 
+
+def main():
+    print('To end the program, enter numeral = 0')
+    
+    operation_conv = ['Дюймы в сантиметры', 'Сантиметры в дюймы', 'Мили в километры', 'Километры в мили', 'Фунты в килограммы', 'Килограммы в фунты', 'Унции в граммы', 'Граммы в унции', 'Галлон в литры', 'Литры в галлоны', 'Пинты в литры', 'Литры в пинты']
+    
+    for idx, elem in enumerate(operation_conv, 1):
+        print(idx, elem)
+    while 1:
+        numeral = int(input('Enter a numeral from 1 to 12: '))
+        if numeral == 0:
+            break
+        number = int(input('Enter the number to convert: '))
+        if numeral == 0:
+            break
+        if numeral == 1:
+            print(inches_centimeters(number))
+        if numeral == 2:
+            print(centimeters_inches(number))
+        if numeral == 3:
+            print(miles_kilometers(number))
+        if numeral == 4:
+            print(kilometers_miles(number))
+        if numeral == 5:
+            print(lb_kg(number))
+        if numeral == 6:
+            print(kg_lb(number))
+        if numeral == 7:
+            print(oz_grams(number))
+        if numeral == 8:
+            print(grams_oz(number))
+        if numeral == 9:
+            print(gallons_liters(number))
+        if numeral == 10:
+            print(liters_gallons(number))
+        if numeral == 11:
+            print(pints_liters(number))
+        if numeral == 12:
+            print(liters_pints(number))
+
+
+if __name__ == '__main__':
+    main()
