@@ -24,3 +24,12 @@ def centimeters_inches(number):
 def miles_kilometers(number):
     number *= 1.60934
     return round(number, 2)
+    
+    
+# 1.4.Километры в мили
+
+
+def kilometers_miles(number):
+    number /= 1.60934
+    return round(number, 2)
+
