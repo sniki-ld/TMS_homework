@@ -66,3 +66,10 @@ def grams_oz(number):
     return round(number, 2)
 
 
+# 1.9.Галлон в литры
+
+
+def gallons_liters(number):
+    number *= 3.78541
+    return round(number, 2)
+
