@@ -121,8 +121,6 @@ def main():
         if numeral == 0:
             break
         number = int(input('Enter the number to convert: '))
-        if numeral == 0:
-            break
         if numeral == 1:
             print(inches_centimeters(number))
         if numeral == 2:
