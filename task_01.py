@@ -89,3 +89,12 @@ def pints_liters(number):
     number /= 2.11338
     return round(number, 2)
 
+
+# 1.12.Литры в пинты
+
+
+def liters_pints(number):
+    number *= 2.11338
+    return round(number, 2)
+
+
