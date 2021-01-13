@@ -80,3 +80,12 @@ def gallons_liters(number):
 def liters_gallons(number):
     number /= 3.78541
     return round(number, 2)
+    
+    
+# 1.11.Пинты в литры
+
+
+def pints_liters(number):
+    number /= 2.11338
+    return round(number, 2)
+
