@@ -5,7 +5,7 @@
 # 1.1.Дюймы в сантиметры
 
 
-def inches_centimeters(number):
+def inches_centimeters(number: int) -> int:
     number *= 2.54
     return number
     
@@ -13,7 +13,7 @@ def inches_centimeters(number):
 # 1.2.Сантиметры в дюймы
 
 
-def centimeters_inches(number):
+def centimeters_inches(number: int) -> int:
     number /= 2.54
     return round(number, 2)
 
@@ -21,7 +21,7 @@ def centimeters_inches(number):
 # 1.3.Мили в километры
 
 
-def miles_kilometers(number):
+def miles_kilometers(number: int) -> int:
     number *= 1.60934
     return round(number, 2)
     
@@ -29,7 +29,7 @@ def miles_kilometers(number):
 # 1.4.Километры в мили
 
 
-def kilometers_miles(number):
+def kilometers_miles(number: int) -> int:
     number /= 1.60934
     return round(number, 2)
 
@@ -37,7 +37,7 @@ def kilometers_miles(number):
 # 1.5.Фунты в килограммы
 
 
-def lb_kg(number):
+def lb_kg(number: int) -> int:
     number /= 2.20462
     return round(number, 2)
 
@@ -45,7 +45,7 @@ def lb_kg(number):
 # 1.6.Килограммы в фунты
 
 
-def kg_lb(number):
+def kg_lb(number: int) -> int:
     number *= 2.20462
     return round(number, 2)
 
@@ -53,7 +53,7 @@ def kg_lb(number):
 # 1.7.Унции в граммы
 
 
-def oz_grams(number):
+def oz_grams(number: int) -> int:
     number *= 28.3495
     return round(number, 2)
 
@@ -61,7 +61,7 @@ def oz_grams(number):
 # 1.8.Граммы в унции
 
 
-def grams_oz(number):
+def grams_oz(number: int) -> int:
     number *= 0.035274
     return round(number, 2)
 
@@ -69,7 +69,7 @@ def grams_oz(number):
 # 1.9.Галлон в литры
 
 
-def gallons_liters(number):
+def gallons_liters(number: int) -> int:
     number *= 3.78541
     return round(number, 2)
 
@@ -77,7 +77,7 @@ def gallons_liters(number):
 # 1.10.Литры в галлоны
 
 
-def liters_gallons(number):
+def liters_gallons(number: int) -> int:
     number /= 3.78541
     return round(number, 2)
     
@@ -85,7 +85,7 @@ def liters_gallons(number):
 # 1.11.Пинты в литры
 
 
-def pints_liters(number):
+def pints_liters(number: int) -> int:
     number /= 2.11338
     return round(number, 2)
 
@@ -93,7 +93,7 @@ def pints_liters(number):
 # 1.12.Литры в пинты
 
 
-def liters_pints(number):
+def liters_pints(number: int) -> int:
     number *= 2.11338
     return round(number, 2)
 
