@@ -6,6 +6,7 @@
 
 
 def inches_centimeters(number: int) -> int:
+    """The function of converting inches to centimeters."""
     number *= 2.54
     return number
     
@@ -14,6 +15,7 @@ def inches_centimeters(number: int) -> int:
 
 
 def centimeters_inches(number: int) -> int:
+    """The function of converting centimeters to inches."""
     number /= 2.54
     return round(number, 2)
 
@@ -22,6 +24,7 @@ def centimeters_inches(number: int) -> int:
 
 
 def miles_kilometers(number: int) -> int:
+    """The function of converting miles to kilometers."""
     number *= 1.60934
     return round(number, 2)
     
@@ -30,6 +33,7 @@ def miles_kilometers(number: int) -> int:
 
 
 def kilometers_miles(number: int) -> int:
+    """The function of converting  kilometers to miles."""
     number /= 1.60934
     return round(number, 2)
 
@@ -38,6 +42,7 @@ def kilometers_miles(number: int) -> int:
 
 
 def lb_kg(number: int) -> int:
+    """Function for converting pounds to kilograms."""
     number /= 2.20462
     return round(number, 2)
 
@@ -46,6 +51,7 @@ def lb_kg(number: int) -> int:
 
 
 def kg_lb(number: int) -> int:
+    """Function for converting  kilograms to pounds."""
     number *= 2.20462
     return round(number, 2)
 
@@ -54,6 +60,7 @@ def kg_lb(number: int) -> int:
 
 
 def oz_grams(number: int) -> int:
+    """Function for converting ounces to grams."""
     number *= 28.3495
     return round(number, 2)
 
@@ -62,6 +69,7 @@ def oz_grams(number: int) -> int:
 
 
 def grams_oz(number: int) -> int:
+    """Function for converting grams to ounces."""
     number *= 0.035274
     return round(number, 2)
 
@@ -70,6 +78,7 @@ def grams_oz(number: int) -> int:
 
 
 def gallons_liters(number: int) -> int:
+    """Function of converting gallons to liters."""
     number *= 3.78541
     return round(number, 2)
 
@@ -78,6 +87,7 @@ def gallons_liters(number: int) -> int:
 
 
 def liters_gallons(number: int) -> int:
+    """Function of converting  liters to gallons."""
     number /= 3.78541
     return round(number, 2)
     
@@ -86,6 +96,7 @@ def liters_gallons(number: int) -> int:
 
 
 def pints_liters(number: int) -> int:
+    """The function of converting pints to liters."""
     number /= 2.11338
     return round(number, 2)
 
@@ -94,6 +105,7 @@ def pints_liters(number: int) -> int:
 
 
 def liters_pints(number: int) -> int:
+    """The function of converting liters to pints."""
     number *= 2.11338
     return round(number, 2)
 
@@ -110,6 +122,8 @@ def liters_pints(number: int) -> int:
 
 
 def main():
+    
+    """This function provides a choice of 12 conversion options from one unit of measurement to another."""
     print('To end the program, enter numeral = 0')
     
     operation_conv = ['Дюймы в сантиметры', 'Сантиметры в дюймы', 'Мили в километры', 'Километры в мили', 'Фунты в килограммы', 'Килограммы в фунты', 'Унции в граммы', 'Граммы в унции', 'Галлон в литры', 'Литры в галлоны', 'Пинты в литры', 'Литры в пинты']
