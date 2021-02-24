@@ -8,20 +8,17 @@
 
 
 def my_function(x: int) -> int:
-    """ Calculation of mathematical operations for x."""
-    if -5 <= x <= 5:
-        y = x ** 2
-        return y
-    elif x < -5:
-        y = 2 * abs(x) - 1
-        return y
+    """ Calculate function values for x in the range from -5 to 5 inclusive."""
+
+    if x < -5:
+        return 2 * abs(x) - 1
     elif x > 5:
-        y = 2 * x
-        return y
+        return 2 * x
+    return x ** 2
+
 
 
 def main():
-    """Calculate the value of a function in a given range."""
     return [print(my_function(x), end=' ') for x in range(-10, 11)]
 
 
