@@ -3,7 +3,9 @@
 # (Определить функцию, позволяющую распознавать слова палиндромы.)
 
 
-def word_palindrome1(word):
+def word_palindrome1(word: str) -> bool:
+    """The function determines if a word is a palindrome."""
+
     pol = word[::-1]
     if pol != word:
         return False
